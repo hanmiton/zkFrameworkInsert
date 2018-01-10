@@ -1,0 +1,14 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+	<window title="Save User Window" border="normal" apply="com.digitalizador.controller.UserController">
+		<label value="Nombre"></label>
+		<separator></separator>
+		<textbox id="firstName"></textbox>
+		<separator></separator>
+		<label value="User Code"></label>
+		<separator></separator>
+		<textbox id="userCode"></textbox>
+		<separator></separator>
+		<button label="Grabar Usuario" id="saveUser"></button>
+	</window>
+</zk>
