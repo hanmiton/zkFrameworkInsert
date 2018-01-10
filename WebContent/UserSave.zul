@@ -1,13 +1,25 @@
 <?page title="new page title" contentType="text/html;charset=UTF-8"?>
 <zk>
 	<window title="Save User Window" border="normal" apply="com.digitalizador.controller.UserController">
-		<label value="Nombre"></label>
+		<label value="nombre de usuario"></label>
 		<separator></separator>
-		<textbox id="firstName"></textbox>
+		<textbox id="nameUser"></textbox>
 		<separator></separator>
-		<label value="User Code"></label>
+		<label value="apellido de usuario"></label>
 		<separator></separator>
-		<textbox id="userCode"></textbox>
+		<textbox id="apeUser"></textbox>
+		<separator></separator>
+		<label value="email de usuario"></label>
+		<separator></separator>
+		<textbox id="emailUser"></textbox>
+		<separator></separator>
+		<label value="password de usuario"></label>
+		<separator></separator>
+		<textbox id="passUser"></textbox>
+		<separator></separator>
+		<label value="username"></label>
+		<separator></separator>
+		<textbox id="username"></textbox>
 		<separator></separator>
 		<button label="Grabar Usuario" id="saveUser"></button>
 	</window>

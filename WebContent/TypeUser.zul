@@ -1,0 +1,14 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window title="new page title" border="normal" apply="com.digitalizador.controller.UserController">
+		<label value="tipo de usuario"></label>
+		<separator></separator>
+		<textbox id="typeUser"></textbox>
+		<separator></separator>
+		<label value="description"></label>
+		<separator></separator>
+		<textbox id="desc"></textbox>
+		<separator></separator>
+		<button label="Grabar Usuario" id="saveType"></button>
+</window>
+</zk>

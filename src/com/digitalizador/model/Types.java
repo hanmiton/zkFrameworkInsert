@@ -1,7 +1,5 @@
 package com.digitalizador.model;
 
-
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -10,13 +8,14 @@ import javax.persistence.Table;
 
 import org.hibernate.annotations.GenericGenerator;
 
-@Entity
-@Table(name = "user")
-public class User {
 
+
+@Entity
+@Table(name = "TIPOS")
+public class Types {
 	private String OID;
-	private String USER_NAME;
-	private String USER_CODE;
+	private String TIPO;
+	private String DESCRIPCION;
 	private  String VERSION;
 	
 	@Id
@@ -35,24 +34,24 @@ public class User {
 		OID = oID;
 	}
 	
-	@Column(name = "USER_NAME")
-	public String getUSER_NAME() {
-		return USER_NAME;
+	@Column(name = "TIPO")
+	public String getTIPO() {
+		return TIPO;
 	}
 	
-	@Column(name = "USER_NAME")
-	public void setUSER_NAME(String uSER_NAME) {
-		USER_NAME = uSER_NAME;
+	@Column(name = "TIPO")
+	public void setTIPO(String tIPO) {
+		TIPO = tIPO;
 	}
 	
-	@Column(name = "USER_CODE")
-	public String getUSER_CODE() {
-		return USER_CODE;
+	@Column(name = "DESCRIPCION")
+	public String getDESCRIPCION() {
+		return DESCRIPCION;
 	}
 	
-	@Column(name = "USER_CODE")
-	public void setUSER_CODE(String uSER_CODE) {
-		USER_CODE = uSER_CODE;
+	@Column(name = "DESCRIPCION")
+	public void setDESCRIPCION(String dESCRIPCION) {
+		DESCRIPCION = dESCRIPCION;
 	}
 	
 	@Column(name = "VERSION")

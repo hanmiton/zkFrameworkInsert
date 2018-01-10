@@ -4,14 +4,22 @@
         "http://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
     <session-factory>
-        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/test</property>
-        <property name="hibernate.connection.username">root</property>
+    	<!-- Mysql Driver Class bas de datos
+    	 <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property> 
+    	 <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/test</property>
+    	  <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        
+    	 -->
+       	<property name="hibernate.default.schema">PUBLIC</property>
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/test2</property>
+        <property name="hibernate.connection.username">postgres</property>
         <property name="hibernate.connection.password">Quien777Dice</property>
         <property name="hibernate.connection.pool_size">1</property>
         <property name="hibernate.current_session_context_class">thread</property>
         <!-- Sql Dialect -->
-        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+        
 		<!-- Enable hibernate autmatic session context management -->
 		<property name="current_session_context_class">thread</property>
 		<!-- disabel secod level cache -->
@@ -21,6 +29,7 @@
         <!-- Drop and re-create the database schema on startup  -->
         <property name="hbm2ddl.auto">update</property>
         <!-- Mapping Classes  -->
-        <mapping class="com.digitalizador.model.User"/>
+        <mapping class="com.digitalizador.model.Usuario"/>
+        <mapping class="com.digitalizador.model.Types"/>
     </session-factory>
 </hibernate-configuration>
