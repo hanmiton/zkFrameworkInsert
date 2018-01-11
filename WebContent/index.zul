@@ -1,6 +1,17 @@
-<?page title="Auto Generated index.zul"?>
-<window title="Hello World!!" border="normal" width="200px">
-
-<label value="You are using: ${desktop.webApp.version}"/>
-
-</window>
+<?link rel="stylesheet" type="text/css" href="/style.css"?>
+<zk>
+	<borderlayout hflex="1" vflex="1">
+		<north height="100px" border="none" >
+			<include src="/mainpage/banner.zul"/>
+		</north>
+		<west width="260px" border="none" collapsible="true" splittable="true" minsize="300">
+			<include src="/mainpage/sidebar.zul"/> 	
+		</west>
+		<center id="mainContent" autoscroll="true">
+			<include src="/mainpage/main.zul"/>
+		</center>
+		<south height="50px" border="none">
+			<include src="/mainpage/footer.zul"/> 	
+		</south>
+	</borderlayout>
+</zk>

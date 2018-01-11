@@ -29,6 +29,7 @@
         <!-- Drop and re-create the database schema on startup  -->
         <property name="hbm2ddl.auto">update</property>
         <!-- Mapping Classes  -->
+        
         <mapping class="com.digitalizador.model.Usuario"/>
         <mapping class="com.digitalizador.model.Types"/>
     </session-factory>
